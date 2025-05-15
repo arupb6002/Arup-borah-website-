@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arup Borah</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #1a1a1a;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #001f54;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+    }
+    .menu-icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+    }
+    nav {
+      display: none;
+      background: #002b7a;
+      text-align: center;
+    }
+    nav a {
+      display: block;
+      padding: 1rem;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #003366;
+    }
+    nav a:hover {
+      background: #004b8d;
+    }
+    .open { 
+      display: block; 
+      animation: slideDown 0.3s ease-in-out; 
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .main-content {
+      text-align: center;
+      padding: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .business-btn {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #0a58ca;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .business-btn:hover {
+      background-color: #004bb5;
+    }
+    .contacts {
+      background: #ffffffcc;
+      border-radius: 12px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      width: 80%;
+      max-width: 500px;
+    }
+    .contacts h2 { 
+      margin-bottom: 1rem; 
+    }
+    .contacts a {
+      margin: 0 10px;
+      font-size: 1.8rem;
+      color: #333;
+      transition: transform 0.3s;
+    }
+    .contacts a:hover { 
+      transform: scale(1.2); 
+    }
+    /* CSS */
+.copyright {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 10px;
+  color: #888;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+    audio { 
+      display: none; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ARUP BORAH</h1>
+    <p>"धर्मो रक्षति रक्षितः"</p>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+  
+  <nav id="menu">
+    <a href="index.html">Home</a>
+    <a href="contect.html">Contact Us</a>
+    <a href="contect.html">Arup1</a>
+    <a href="contect.html">Arup2</a>
+    <a href="contect.html">Arup3</a>
+  </nav>
+  
+  <div class="main-content">
+    <h2>WELCOME TO MY WEBSITE</h2>
+    <a class="business-btn" href="https://borahdigitalsolutions.rf.gd" target="_blank">Our Business</a>
+    <p>HI ITS ARUP BORAH<br>(WEBSITE TU DEVELOP KORI ASU)</p>
+  </div>
+  
+  <div class="contacts">
+    <h2>Contact:</h2>
+    <a href="https://wa.me/+916002148763" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://facebook.com/osadharijibon" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/_borahhh___" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://t.me/riddhiunofficialinsta" target="_blank"><i class="fab fa-telegram"></i></a>
+    <p style="margin-top: 1rem; font-weight: bold; color: purple;">
+      Thank you <span style="font-size: 1.2rem;">&#128522;</span>
+      <p class="copyright">&copy; COPYRIGHT 2025 @ ARUP BORAH</p>
+    </p>
+  </div>
+  
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/svm0n6.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('open');
+    }
+  </script>
+</body>
+  </html>
